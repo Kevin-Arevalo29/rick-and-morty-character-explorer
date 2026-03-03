@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CharacterCard from '../../CharacterCard/CharacterCard';
+import { NavLink } from 'react-router-dom';
 
 const CharacterP = () => {
     const [characterList, setCharacterList] = useState([]);
@@ -106,6 +107,9 @@ const CharacterP = () => {
                 >
                     Siguiente
                 </button>
+                <ul id='po'>
+                    <ol> <NavLink to='/'>Inicio</NavLink></ol>
+                </ul>
             </div>
         </div>
     );

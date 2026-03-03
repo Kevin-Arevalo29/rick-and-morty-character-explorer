@@ -3,6 +3,7 @@ import "./App.css";
 import HomeP from './components/Pages/Home/HomeP';
 import CharacterP from './components/Pages/CharacterPages/CharacterP';
 import NotFounP from "./components/Pages/NotFount/NotFounP";
+import Creador from "./components/Pages/Creador/Creador";
 
 function App() {
   return (
@@ -11,8 +12,10 @@ function App() {
         <Routes>
           <Route path='/' element={<HomeP/>}/>
           <Route path='/Personajes' element={<CharacterP/>}/>
+          <Route path='/Creador' element={<Creador/>}/>
           <Route path='/*' element={<NotFounP/>}/>
         </Routes>
+
       </Router>
     </div>
   );

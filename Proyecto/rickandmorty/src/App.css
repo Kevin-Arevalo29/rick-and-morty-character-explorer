@@ -1,93 +1,77 @@
 body{
-  background-image: url(./components/portal.jpg);
-  margin: auto;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(6, 76, 102, 0.4)), 
+                    url(./assets/Image/portal-rick.jpg);;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.card{
-  background-color: hwb(107 28% 4%);
-  border: 5px solid rgba(255, 255, 255, 0.821);
-  border-radius: 8px;
-  box-shadow: 0 4px black;
-  max-width: 200px;
-  font-family: cursive;
-  font-size: 25px;
-  
-}
-.position{
-  display:flex;
-  justify-content: center;  
-  flex-wrap:wrap;
-  gap: 20px;
-  
-}
+
+/* PAGINA DE INICIO */
+
+/* Titulo de la pagina de inicio */
 .title1{
   font-family:cursive;
   font-size: 70px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-.title2{
-  font-family: cursive;
-  font-size: 50px;
-  text-align: center;
-  color: rgb(80, 6, 176);
-}
-.circle{ 
-  font-family: cursive;
-  border: 2px solid black;
-  text-align: center;
-  border-radius: 30px;
-  width: 100px;
-  margin-left: 50px;
-  margin-top: -34px;
-  background-color: hwb(107 28% 4%);
-  position: relative;
-}
-.imgs{
-  width: 100%;
-  border-bottom: solid 10px rgb(0, 0, 0);
+  background: linear-gradient(90deg, #ffffff ,#57ff09 );
+  text-transform: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+  ; 
 }
 
-.details {
-  border-top: solid 5px black;
-  font-family:cursive;
-  font-size: 25px;
-  text-align: center;
-  color: #262121;
+/*SubTitulo de pagina de inicio */
+.subtitulo{
+  font-size: 72px;
+  font-family: cursive;
+  color: #4bec06;
 }
-.button {
-  font-size: 20px;
-  background-color: black;
-  color: rgb(34, 255, 0);
-  border: 2px solid rgb(34, 255, 0);
+
+/* Botones Home */
+.diseñoBoton{
+  display: flex;
   justify-content: center;
-  margin: 16px 0;
-  
+  border: solid rgb(86, 255, 44) 5px;
+  border-radius: 20px;
+  height: 70px;
+  width: 340px;
+  padding: 0;
+  margin-bottom: 90px;
+  background-color: #1a7d11;
 }
-.textb{
- color: rgb(90, 255, 8);
- font-size: 20px;
-}
-.error{font-size: 30px;
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
   font-family: cursive;
-  color: rgb(132, 16, 16);
-  text-align: center;
-}
-.em{
-  font-size: 100px;
-}
-/* Styles Nav */
-.active{
-  font-size: 90px;
-  font-family: cursive;
-  color: rgb(22, 123, 30);;
-}
-.positionNav{
-  text-align: center;
   font-size: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   
 }
- /* Filters Section */
+
+
+/* PAGINA DE PERSONAJES */
+
+/* Titulo de la pagina de personajes */
+.title2{
+  font-family: cursive;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(126, 244, 236);
+}
+
+/* Botones de filtro */
+.filters input {
+  font-family: cursive;
+  padding: 13px;
+  border: 2px solid #73c5da; /* Color turquesa */
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #118abe;
+  font-size: 2em;
+  width: 300px;
+}
+
+ /* posicion de botones de filtro */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -96,32 +80,229 @@ body{
   gap: 10px;
 }
 
-.filters input {
-  font-family: cursive;
-  padding: 10px;
-  border: 2px solid #4ca221; /* Color turquesa */
-  border-radius: 5px;
-  background-color: #1c2519;
-  color: #e0e0e0;
-  font-size: 2em;
-  width: 300px;
-}
-
+/* Letra de botones de filtro */
 .filters input::placeholder {
-  color: #4bec06; /* Color del texto del placeholder */
+  color: #09e2de; /* Color del texto del placeholder */
 }
 
+/* Posicion de las trajetas */
+.position{
+  display:flex;
+  justify-content: center;  
+  flex-wrap:wrap;
+  gap: 50px;
+}
+
+/* TARJETAS */
+.card{
+  background-color: hwb(111 7% 11%);
+  border: 6px solid rgb(172, 239, 234);
+  border-radius: 10px;
+  box-shadow: 10px 10px rgb(0, 0, 0);
+  max-width: 250px;
+  font-family: cursive;
+  font-size: 25px;
+}
+
+/* imagenes de las tarjetas */
+.imgs{
+  width: 100%;
+  border-bottom: solid 10px rgb(0, 0, 0);
+}
+
+/* Circulo dentro de las tarjetas */
+.circle{ 
+  font-family: cursive;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 30px;
+  width: 150px;
+  margin: auto;
+  margin-top: -34px; 
+  background-color: hwb(119 11% 10%);
+  position: relative;
+}
+
+/* Detalles de las tarjetas */
+.details {
+  border-top: solid 5px black;
+  font-family:cursive;
+  font-size: 25px;
+  text-align: center;
+  color: #262121;
+}
+
+/* Botones de anterior y siguiente de perosnajes */
+.button {
+  font-size: 3em;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: 4px solid rgb(31, 140, 162);
+  border-radius: 4px;
+  justify-content: center;
+  margin: 16px 20px;
+  font-family: cursive;
+}
+
+/* Texto de pagina de personajes*/
+.textb{
+color: rgb(8, 234, 255);
+ font-size: 40px;
+ font-family: cursive;
+}
+
+/* Boton de busqueda */
 .filters button {
   font-family: cursive;
-  padding: 10px 20px;
-  border: none;
+  border: 2px solid #73c5da;
   border-radius: 5px;
-  background-color: #3cc32f; /* Color naranja brillante */
-  color: #000000;
-  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5); /* Color naranja brillante */
+  color: #09e2de;
+  font-size: 2.5em;
   cursor: pointer;
 }
 
+/* Cambio de color de busqueda */
 .filters button:hover {
-  background-color: #e64a19; /* Color naranja más oscuro para el hover */
+  background-color: #09809d; /* Color naranja más oscuro para el hover */
 }
+
+#po{ 
+  margin-top: -6em;
+  margin-left:-14em;
+  border: solid rgb(86, 255, 44) 5px;
+  border-radius: 20px;
+  height: 70px;
+  width: 200px;
+  padding: 0;
+  background-color: #1a7d11;
+}
+
+
+/* PAGINA DE CREADOR */
+
+.credits-container {
+    background-color: #0d0d0d; /* Un negro más profundo */
+    color: #ffffff;
+    padding: 50px 20px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    text-align: center;
+    border-top: 4px solid #97ce4c;
+}
+
+.credits-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Sección de Perfil */
+.dev-name {
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+}
+
+.dev-name span {
+    color: #97ce4c;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(151, 206, 76, 0.4);
+}
+
+.dev-description {
+    color: #ccc;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 1.2rem;
+}
+
+/* Redes Sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.45rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Colores de Redes */
+.tiktok:hover { background-color: #ff0050; box-shadow: 0 0 15px #ff0050; }
+.instagram:hover { background-color: #e1306c; box-shadow: 0 0 15px #e1306c; }
+.github:hover { background-color: #333; box-shadow: 0 0 15px #333; }
+.linkedin:hover { background-color: #0077b5; box-shadow: 0 0 15px #0077b5; }
+
+/* Información Técnica */
+.separator {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 30px auto;
+}
+
+.tech-stack h2 {
+    color: #00b0c8;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.tech-stack ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tech-stack li {
+    background: #1a1a1a;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 1.0rem;
+    color: #97ce4c;
+}
+
+.dev-year {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.disclaimer {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: #444;
+}
+
+.posicionBoton{
+  display: flex;
+  gap: 10em;
+}
+
+/* PAGINA DE ERROR */
+
+.error{font-size: 30px;
+  font-family: cursive;
+  color: rgb(28, 153, 198);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  text-align: center;  
+  justify-content: center;
+}
+
+/* Styles Nav */
+/* .active{
+  border: solid blue 2px;
+  font-size: 70px;
+  font-family: cursive;
+  color: rgb(2, 126, 12);;
+} */

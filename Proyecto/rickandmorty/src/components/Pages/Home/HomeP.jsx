@@ -5,16 +5,17 @@ const HomeP = () => {
   return (
     <div>
         <h1 className='title1'>Bienvenidos a la Pagina de Rick And Morty</h1>
-        <h3>Enlaces rapidos</h3>
+        <h3 className='subtitulo'>Enlaces rapidos</h3>
 
-        <div className='positionNav'>
+        <div>
             <ul>
-                <li>
-                    <NavLink to='/' className={({isActive})=>(isActive ? 'active': '')}>HomePage</NavLink>
-                </li> 
-                <li>
+                
+                <ol className='diseñoBoton'>
                     <NavLink to='./Personajes' className={({isActive})=>(isActive ? 'active': '')}>Personajes</NavLink>
-                </li>
+                </ol>
+                <ol className='diseñoBoton'>
+                    <NavLink to='/Creador' className={({isActive})=>(isActive ? 'active': '')}>Creador</NavLink>
+                </ol> 
             </ul>
         </div>
     </div>

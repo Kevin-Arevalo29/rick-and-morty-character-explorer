@@ -15,4 +15,4 @@ Proyecto desarrollado para practicar el consumo de APIs y el manejo de estados g
 ## 📦 Cómo ejecutarlo
 1. Clona el repo: `git clone https://github.com/Kevin-Arevalo29/rick-and-morty-character-explorer.git`
 2. Instala dependencias: `npm install`
-3. Corre el proyecto: `npm start`
+3. Corre el proyecto: `npm run dev`
